@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="ProductFeedObserverFactory.cs" />
     <Compile Include="ProductChangeObserver.cs" />
     <Compile Include="ProductChangeProcessor.cs" />
     <Compile Include="Program.cs" />
