@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.ProcessorConsole", "ContosoRetailStore\Contoso.ProcessorConsole.csproj", "{B7DD4D89-41A8-49A8-9030-0D7A4D37E4DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.ProcessorConsole", "Contoso.ProcessorConsole\Contoso.ProcessorConsole.csproj", "{B7DD4D89-41A8-49A8-9030-0D7A4D37E4DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constoso.WebJob", "WebJob1\Constoso.WebJob.csproj", "{78EA37CD-9228-47DA-AF8D-F2096B34683A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constoso.ProcessorWebJob", "Contoso.ProcessorWebJob\Constoso.ProcessorWebJob.csproj", "{78EA37CD-9228-47DA-AF8D-F2096B34683A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
