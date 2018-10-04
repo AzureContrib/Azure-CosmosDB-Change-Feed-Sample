@@ -7,38 +7,34 @@ using System.Threading.Tasks;
 namespace Contoso.ProcessorConsole.NETFx
 {
     /// <summary>
-    /// 
+    ///  This class works as the processor of all change feeds
     /// </summary>
     public class ProductChangeProcessor
     {
         /// <summary>
-        ///  
+        ///  Start Processing the Changes
         /// </summary>
-        public static void RunProcessing()
+        public static void DoProcessing()
         {
-            RunProcessingAsync().Wait();
+            DoProcessingAsync().Wait();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        static async Task RunProcessingAsync()
+        static async Task DoProcessingAsync()
         {
             DocumentCollectionInfo feedCollectionInfo = new DocumentCollectionInfo()
             {
-                DatabaseName = "DatabaseName",
-                CollectionName = "MonitoredCollectionName",
-                Uri = new Uri("https://sampleservice.documents.azure.com:443/"),
-                MasterKey = "<authKey>"
+                DatabaseName = Constants.CosmosDb_DatabaseName,
+                CollectionName = Constants.CosmosDb_CollectionName,
+                Uri = new Uri(Constants.CosmosDb_Uri),
+                MasterKey = Constants.CosmosDb_Key
             };
 
             DocumentCollectionInfo leaseCollectionInfo = new DocumentCollectionInfo()
             {
-                DatabaseName = "DatabaseName",
+                DatabaseName = Constants.CosmosDb_DatabaseName,
                 CollectionName = "leases",
-                Uri = new Uri("https://sampleservice.documents.azure.com:443/"),
-                MasterKey = "-- the auth key"
+                Uri = new Uri(Constants.CosmosDb_Uri),
+                MasterKey = Constants.CosmosDb_Key
             };
 
             var builder = new ChangeFeedProcessorBuilder();

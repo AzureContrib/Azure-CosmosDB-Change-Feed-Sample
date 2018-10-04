@@ -10,6 +10,9 @@ namespace Contoso.ProcessorConsole.NETFx
     {
         static void Main(string[] args)
         {
+
+          
+            ProductChangeProcessor.DoProcessing();
         }
     }
 }

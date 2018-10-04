@@ -27,18 +27,18 @@ namespace Contoso.ProcessorConsole
         {
             DocumentCollectionInfo feedCollectionInfo = new DocumentCollectionInfo()
             {
-                DatabaseName = "DatabaseName",
-                CollectionName = "MonitoredCollectionName",
-                Uri = new Uri("https://sampleservice.documents.azure.com:443/"),
-                MasterKey = "<authKey>"
+                DatabaseName = Constants.CosmosDb_DatabaseName,
+                CollectionName = Constants.CosmosDb_CollectionName,
+                Uri = new Uri(Constants.CosmosDb_Uri),
+                MasterKey = Constants.CosmosDb_Key
             };
 
             DocumentCollectionInfo leaseCollectionInfo = new DocumentCollectionInfo()
             {
-                DatabaseName = "DatabaseName",
+                DatabaseName = Constants.CosmosDb_DatabaseName,
                 CollectionName = "leases",
-                Uri = new Uri("https://sampleservice.documents.azure.com:443/"),
-                MasterKey = "-- the auth key"
+                Uri = new Uri(Constants.CosmosDb_Uri),
+                MasterKey = Constants.CosmosDb_Key
             };
 
             var builder = new ChangeFeedProcessorBuilder();
