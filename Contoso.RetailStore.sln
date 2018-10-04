@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.ProcessorConsole", "ContosoRetailStore\Contoso.ProcessorConsole.csproj", "{B7DD4D89-41A8-49A8-9030-0D7A4D37E4DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constoso.WebJob", "WebJob1\Constoso.WebJob.csproj", "{78EA37CD-9228-47DA-AF8D-F2096B34683A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7DD4D89-41A8-49A8-9030-0D7A4D37E4DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DD4D89-41A8-49A8-9030-0D7A4D37E4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DD4D89-41A8-49A8-9030-0D7A4D37E4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DD4D89-41A8-49A8-9030-0D7A4D37E4DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78EA37CD-9228-47DA-AF8D-F2096B34683A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78EA37CD-9228-47DA-AF8D-F2096B34683A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78EA37CD-9228-47DA-AF8D-F2096B34683A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78EA37CD-9228-47DA-AF8D-F2096B34683A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {100BA797-9B82-4647-A406-1BF6CD89B0AB}
+	EndGlobalSection
+EndGlobal
